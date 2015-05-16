@@ -1,0 +1,6 @@
+jboss:
+  image: pascalgrimaud/jboss-as:7.1.1
+  ports:
+  - "8080:8080"
+  - "9990:9990"
+
