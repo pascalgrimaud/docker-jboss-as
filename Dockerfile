@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM pascalgrimaud/ubuntu
 MAINTAINER Pascal Grimaud <pascalgrimaud@gmail.com>
 
 # update
@@ -7,9 +7,6 @@ RUN apt-get -y update
 # install java7
 RUN apt-get install -y openjdk-7-jre
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
-
-# install wget
-RUN apt-get install -y wget
 
 # download jboss
 RUN wget -q http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz && \
