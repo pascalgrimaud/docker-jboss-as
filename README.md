@@ -9,7 +9,7 @@
 
 The base docker image :
 
-  * [pascalgrimaud/ubuntu](https://registry.hub.docker.com/u/pascalgrimaud/ubuntu/)
+  * [ubuntu:14.04](https://registry.hub.docker.com/u/library/ubuntu/)
 
 The GitHub project :
 

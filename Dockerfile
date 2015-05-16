@@ -20,7 +20,8 @@ RUN wget -q http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # configuration
-RUN sed -i -r 's/jboss.bind.address.management:127.0.0.1/jboss.bind.address.management:0.0.0.0/' /jboss-as-7.1.1.Final/standalone/configuration/standalone.xml
+RUN sed -i -r 's/jboss.bind.address.management:127.0.0.1/jboss.bind.address.management:0.0.0.0/' \
+    /jboss-as-7.1.1.Final/standalone/configuration/standalone.xml
 
 ADD jboss_run.sh /jboss_run.sh
 RUN chmod 755 /*.sh
