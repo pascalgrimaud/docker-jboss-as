@@ -9,7 +9,7 @@ if [ ! -f /.jboss_set_password ]; then
 	# generate password
 	PASS=${JBOSS_PASS:-$(date +%s | sha256sum | base64 | head -c 16 ; echo)}
 	# change password
-	/jboss-as-7.1.1.Final/bin/add-user.sh --silent=true admin ${PASS}
+	/opt/jboss-as-7.1.1.Final/bin/add-user.sh --silent=true admin ${PASS}
 	touch /.jboss_set_password
 	echo "Initializing the admin user password : done!"
 fi
@@ -30,4 +30,4 @@ echo "######################################################################"
 echo ""
 
 # start JBoss
-exec /jboss-as-7.1.1.Final/bin/standalone.sh -b=0.0.0.0
+exec /opt/jboss-as-7.1.1.Final/bin/standalone.sh -b=0.0.0.0
