@@ -13,7 +13,7 @@ The base docker image :
 
 The GitHub project :
 
-  * [pascalgrimaud/docker-ubuntu](https://github.com/pascalgrimaud/docker-jboss-as/)
+  * [pascalgrimaud/docker-jboss-as](https://github.com/pascalgrimaud/docker-jboss-as/)
 
 
 # Installation
