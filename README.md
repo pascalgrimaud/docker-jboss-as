@@ -29,7 +29,7 @@ docker build -t pascalgrimaud/jboss-as:7.1.1 .
 You can build directly from the [GitHub project](https://github.com/pascalgrimaud/docker-jboss-as/) :
 
 ```
-docker build -t pascalgrimaud/ubuntu github.com/pascalgrimaud/docker-jboss-as.git
+docker build -t pascalgrimaud/jboss-as:7.1.1 github.com/pascalgrimaud/docker-jboss-as.git
 ```
 
 
