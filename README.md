@@ -44,13 +44,19 @@ docker run -d -p 8080:8080 -p 9990:9990 pascalgrimaud/jboss-as:7.1.1
 To get the password :
 
 ```
-docker logs <id>
+docker logs <container id>
 ```
 
 Start and set a specific password for JBoss admin user :
 
 ```
 docker run -d -p 8080:8080 -p 9990:9990 -e JBOSS_PASS="pass" pascalgrimaud/jboss-as:7.1.1
+```
+
+If you forget the admin password, delete the file .password and restart the container :
+
+```
+docker exec -it <container id> rm /.password
 ```
 
 

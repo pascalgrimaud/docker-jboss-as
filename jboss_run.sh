@@ -3,14 +3,14 @@
 echo "Starting container : JBoss AS 7.1.1"
 
 # change the password
-if [ ! -f /.jboss_set_password ]; then
+if [ ! -f /.password ]; then
 	echo "Initializing the admin user password..."
 
 	# generate password
 	PASS=${JBOSS_PASS:-$(date +%s | sha256sum | base64 | head -c 16 ; echo)}
 	# change password
 	/opt/jboss-as-7.1.1.Final/bin/add-user.sh --silent=true admin ${PASS}
-	touch /.jboss_set_password
+	touch /.password
 	echo "Initializing the admin user password : done!"
 fi
 
