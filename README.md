@@ -21,15 +21,16 @@ The GitHub project :
 You can clone this project and build with docker command :
 
 ```
-git clone https://github.com/pascalgrimaud/docker-jboss-as.git
-cd docker-jboss-as
-docker build -t pascalgrimaud/jboss-as:7.1.1 .
+git clone https://github.com/pascalgrimaud/docker-jboss-as.git \
+&& cd docker-jboss-as \
+&& docker build -t pascalgrimaud/jboss-as:7.1.1 .
 ```
 
 You can build directly from the [GitHub project](https://github.com/pascalgrimaud/docker-jboss-as/) :
 
 ```
-docker build -t pascalgrimaud/jboss-as:7.1.1 github.com/pascalgrimaud/docker-jboss-as.git
+docker build -t pascalgrimaud/jboss-as:7.1.1 \
+github.com/pascalgrimaud/docker-jboss-as.git
 ```
 
 
@@ -50,7 +51,8 @@ docker logs <container id>
 Start and set a specific password for JBoss admin user :
 
 ```
-docker run -d -p 8080:8080 -p 9990:9990 -e JBOSS_PASS="pass" pascalgrimaud/jboss-as:7.1.1
+docker run -d -p 8080:8080 -p 9990:9990 -e JBOSS_PASS="pass" \
+pascalgrimaud/jboss-as:7.1.1
 ```
 
 If you forget the admin password, delete the file .password and restart the container :
@@ -68,5 +70,5 @@ Then, create a new Dockerfile :
 
 ```
 FROM pascalgrimaud/jboss-as:7.1.1
-ADD file.war /jboss-as-7.1.1.Final/standalone/file.war
+ADD file.war /opt/jboss-as7.1.1.Final/standalone/file.war
 ```

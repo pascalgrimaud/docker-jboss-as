@@ -26,6 +26,10 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # expose ports
 EXPOSE 8080 9990
 
+# add help
+ADD help help.txt /
+RUN chmod 755 /help
+
 # script to start the container
 ADD jboss_run.sh /jboss_run.sh
 RUN chmod 755 /*.sh
