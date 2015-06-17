@@ -1,7 +1,7 @@
 [![logo](https://raw.githubusercontent.com/pascalgrimaud/docker-jboss-as/master/as7_logo.png)]
 (http://jbossas.jboss.org/)
 
-[![Circle CI](https://circleci.com/gh/pascalgrimaud/docker-jboss-as.svg?style=svg)]
+[![Circle CI](https://circleci.com/gh/pascalgrimaud/docker-jboss-as.svg?style=shield)]
 (https://circleci.com/gh/pascalgrimaud/docker-jboss-as)
 
 

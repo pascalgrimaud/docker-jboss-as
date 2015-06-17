@@ -4,6 +4,9 @@ MAINTAINER Pascal Grimaud <pascalgrimaud@gmail.com>
 # update
 RUN apt-get -y update
 
+# install utilities
+RUN apt-get -y install wget
+
 # installation : java7
 RUN apt-get install -y openjdk-7-jre
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
