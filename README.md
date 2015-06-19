@@ -16,6 +16,7 @@ The GitHub project :
   * [pascalgrimaud/docker-jboss-as](https://github.com/pascalgrimaud/docker-jboss-as/)
 
 
+
 # Installation
 
 You can clone this project and build with docker command :
@@ -32,6 +33,17 @@ You can build directly from the [GitHub project](https://github.com/pascalgrimau
 docker build -t pascalgrimaud/jboss-as:7.1.1 \
 github.com/pascalgrimaud/docker-jboss-as.git
 ```
+
+
+
+# Help
+
+To display usage :
+
+```
+docker run pascalgrimaud/jboss-as:7.1.1 /help
+```
+
 
 
 # Usage
@@ -70,5 +82,5 @@ Then, create a new Dockerfile :
 
 ```
 FROM pascalgrimaud/jboss-as:7.1.1
-ADD file.war /opt/jboss-as7.1.1.Final/standalone/file.war
+ADD file.war /opt/jboss-as-7.1.1.Final/standalone/file.war
 ```

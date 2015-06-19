@@ -11,7 +11,7 @@ if [ ! -f /.password ]; then
 	# change password
 	/opt/jboss-as-7.1.1.Final/bin/add-user.sh --silent=true admin ${PASS}
 	touch /.password
-	echo "Initializing the admin user password : done!"
+	echo "Initializing the admin user password : ok"
 fi
 
 # display info
