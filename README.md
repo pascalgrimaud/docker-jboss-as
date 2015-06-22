@@ -41,7 +41,7 @@ github.com/pascalgrimaud/docker-jboss-as.git
 To display usage :
 
 ```
-docker run pascalgrimaud/jboss-as:7.1.1 /help
+docker run --rm pascalgrimaud/jboss-as:7.1.1 /help
 ```
 
 
