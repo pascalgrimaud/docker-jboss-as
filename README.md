@@ -82,5 +82,5 @@ Then, create a new Dockerfile :
 
 ```
 FROM pascalgrimaud/jboss-as:7.1.1
-ADD file.war /opt/jboss-as-7.1.1.Final/standalone/file.war
+ADD file.war /opt/jboss-as-7.1.1.Final/standalone/deployments/file.war
 ```
